@@ -1,3 +1,3 @@
 export default function helloWorld () {
-    console.log('Hello World from Fusebit!')
-  }
+  console.log('Hello, World!')
+}
