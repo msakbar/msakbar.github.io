@@ -68,7 +68,13 @@
             }
           }
         },
-        "errorMessage": "TEST"
+        "errorMessage": {
+          "properties": {
+            "asanaIntegration": "Asana Integration Error Message",
+            "asanaConnector": "Asana Connector Error Message",
+            "ui": "UI error message"
+          }
+        }
       },
       "uischema": {
         "type": "VerticalLayout",
