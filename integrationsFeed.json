@@ -44,7 +44,11 @@
               "id": {
                 "type": "string",
                 "minLength": 3,
-                "pattern": "'/^[A-Za-z0-9-]{1,64}$/'"
+                "pattern": "'/^[A-Za-z0-9-]{1,64}$/'",
+               "errorMessage": {
+                "minLength": "Should have at least 3 characters",
+                "pattern": "Should be a name without spaces or special characters"
+              }
               }
             }
           },
@@ -54,7 +58,11 @@
               "id": {
                 "type": "string",
                 "minLength": 3,
-                "pattern": "'/^[A-Za-z0-9-]{1,64}$/'"
+                "pattern": "'/^[A-Za-z0-9-]{1,64}$/'",
+               "errorMessage": {
+                "minLength": "Should have at least 3 characters",
+                "pattern": "Should be a name without spaces or special characters"
+              }
               }
             }
           },
@@ -66,13 +74,6 @@
                 "description": "The \"toggle\" option renders boolean values as a toggle."
               }
             }
-          }
-        },
-        "errorMessage": {
-          "properties": {
-            "asanaIntegration": "Asana Integration Error Message",
-            "asanaConnector": "Asana Connector Error Message",
-            "ui": "UI error message"
           }
         }
       },
