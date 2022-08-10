@@ -45,10 +45,10 @@
                 "type": "string",
                 "minLength": 3,
                 "pattern": "'/^[A-Za-z0-9-]{1,64}$/'",
-               "errorMessage": {
-                "minLength": "Should have at least 3 characters",
-                "pattern": "Should be a name without spaces or special characters"
-              }
+                "errorMessage": {
+                  "minLength": "Integration name must be at least 3 characters long",
+                  "pattern": "Integration name cannot have any spaces or special characters"
+                }
               }
             }
           },
@@ -59,10 +59,10 @@
                 "type": "string",
                 "minLength": 3,
                 "pattern": "'/^[A-Za-z0-9-]{1,64}$/'",
-               "errorMessage": {
-                "minLength": "Should have at least 3 characters",
-                "pattern": "Should be a name without spaces or special characters"
-              }
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           },
