@@ -23,7 +23,7 @@
               "id": {
                 "type": "string",
                 "minLength": 3,
-                "pattern": "/^[A-Za-z0-9-]{1,64}$/",
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
                 "errorMessage": {
                   "minLength": "Connector name must be at least 3 characters long",
                   "pattern": "Connector name cannot have any spaces or special characters"
@@ -66,7 +66,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-asana-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/asana-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-asana-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/asana-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/asana-connector"
           },
@@ -167,7 +167,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -207,7 +212,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-atlassian-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/atlassian-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-atlassian-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/atlassian-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/atlassian-connector"
           },
@@ -278,7 +283,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -317,7 +327,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-bamboohr-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/bamboohr-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-bamboohr-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/bamboohr-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/bamboohr-connector"
           },
@@ -423,7 +433,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -462,7 +477,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-constantcontact-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/constantcontact-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-constantcontact-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/constantcontact-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/constantcontact-connector"
           },
@@ -507,7 +522,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -549,7 +569,7 @@
               "interactionCallbackType": 5
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-discord-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/discord-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-discord-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/discord-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/discord-connector"
           },
@@ -651,30 +671,17 @@
       "schema": {
         "type": "object",
         "properties": {
-          "githubappIntegration": {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "string",
-                "minLength": 3
-              }
-            }
-          },
           "githubappConnector": {
             "type": "object",
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
-              }
-            }
-          },
-          "ui": {
-            "type": "object",
-            "properties": {
-              "toggle": {
-                "type": "boolean",
-                "description": "The \"toggle\" option renders boolean values as a toggle."
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -685,30 +692,8 @@
         "elements": [
           {
             "type": "Control",
-            "scope": "#/properties/githubappIntegration/properties/id",
-            "label": "Name"
-          },
-          {
-            "type": "Control",
-            "label": "Customize",
-            "scope": "#/properties/ui/properties/toggle",
-            "options": {
-              "toggle": true
-            }
-          },
-          {
-            "type": "Control",
             "scope": "#/properties/githubappConnector/properties/id",
-            "label": "GitHub Connector name",
-            "rule": {
-              "effect": "SHOW",
-              "condition": {
-                "scope": "#/properties/ui/properties/toggle",
-                "schema": {
-                  "const": true
-                }
-              }
-            }
+            "label": "Name"
           }
         ]
       },
@@ -735,7 +720,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-githubapp-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/githubapp-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-githubapp-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/githubapp-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/githubapp-connector"
           },
@@ -812,7 +797,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -851,7 +841,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-githuboauth-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/githuboauth-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-githuboauth-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/githuboauth-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/githuboauth-connector"
           },
@@ -934,7 +924,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -973,7 +968,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-gitlab-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/gitlab-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-gitlab-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/gitlab-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/gitlab-connector"
           },
@@ -1038,7 +1033,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1078,7 +1078,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-google-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/google-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-google-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/google-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/google-connector"
           },
@@ -1173,7 +1173,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1212,7 +1217,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-hubspot-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/hubspot-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-hubspot-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/hubspot-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/hubspot-connector"
           },
@@ -1319,7 +1324,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1358,7 +1368,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-linear-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/linear-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-linear-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/linear-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/linear-connector"
           },
@@ -1441,7 +1451,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1480,7 +1495,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-linkedin-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/linkedin-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-linkedin-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/linkedin-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/linkedin-connector"
           },
@@ -1533,7 +1548,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1572,7 +1592,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-mailchimp-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/mailchimp-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-mailchimp-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/mailchimp-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/mailchimp-connector"
           },
@@ -1679,7 +1699,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1713,7 +1738,7 @@
               "clientSecret": "<% global.consts.random %>"
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-microsoft-bot-framework-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.name %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.name %> -d .\",\"get\":\"fuse connector get <% this.name %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/microsoft-bot-framework-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-microsoft-bot-framework-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.name %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.name %> -d .\",\"get\":\"fuse connector get <% this.name %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/microsoft-bot-framework-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/microsoft-bot-framework-connector"
           },
@@ -1777,7 +1802,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1816,7 +1846,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-oauth2-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/oauth-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-oauth2-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/oauth-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/oauth-connector"
           },
@@ -1860,7 +1890,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1892,7 +1927,7 @@
               "tokenUrl": ""
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-ccf-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/ccf-connector\":\"7.50.4\",\"@fusebit-int/framework\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-ccf-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/ccf-connector\":\"7.50.5\",\"@fusebit-int/framework\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/ccf-connector"
           },
@@ -1936,7 +1971,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -1975,7 +2015,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-outreach-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/outreach-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-outreach-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/outreach-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/outreach-connector"
           },
@@ -2020,7 +2060,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2059,7 +2104,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-pagerduty-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/pagerduty-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-pagerduty-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/pagerduty-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/pagerduty-connector"
           },
@@ -2154,7 +2199,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2193,7 +2243,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-pipedrive-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/pipedrive-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-pipedrive-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/pipedrive-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/pipedrive-connector"
           },
@@ -2252,7 +2302,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2291,7 +2346,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-quickbooks-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/quickbooks-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-quickbooks-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/quickbooks-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/quickbooks-connector"
           },
@@ -2362,7 +2417,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2401,7 +2461,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-reddit-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/reddit-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-reddit-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/reddit-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/reddit-connector"
           },
@@ -2466,7 +2526,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2505,7 +2570,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-salesforce-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/salesforce-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-salesforce-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/salesforce-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/salesforce-connector"
           },
@@ -2564,7 +2629,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2603,7 +2673,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-slack-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/slack-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-slack-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/slack-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/slack-connector"
           },
@@ -2680,7 +2750,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2719,7 +2794,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-stackoverflow-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/stackoverflow-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-stackoverflow-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/stackoverflow-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/stackoverflow-connector"
           },
@@ -2784,7 +2859,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2824,7 +2904,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-twitter-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/twitter-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-twitter-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/twitter-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/twitter-connector"
           },
@@ -2888,7 +2968,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -2927,7 +3012,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-xero-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/xero-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-xero-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/xero-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/xero-connector"
           },
@@ -2972,7 +3057,12 @@
             "properties": {
               "id": {
                 "type": "string",
-                "minLength": 3
+                "minLength": 3,
+                "pattern": "^[A-Za-z0-9-]{1,64}$",
+                "errorMessage": {
+                  "minLength": "Connector name must be at least 3 characters long",
+                  "pattern": "Connector name cannot have any spaces or special characters"
+                }
               }
             }
           }
@@ -3011,7 +3101,7 @@
               "accessTokenExpirationBuffer": 500
             },
             "files": {
-              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-zoom-connector\",\"version\":\"7.50.4\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.4\",\"@fusebit-int/zoom-connector\":\"7.50.4\"}}"
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-connector-zoom-connector\",\"version\":\"7.50.5\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.50.5\",\"@fusebit-int/zoom-connector\":\"7.50.5\"}}"
             },
             "handler": "@fusebit-int/zoom-connector"
           },
