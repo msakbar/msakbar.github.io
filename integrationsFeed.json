@@ -6073,8 +6073,27 @@
         "salesforceConnector": {
           "entityType": "connector",
           "data": {
-            "configuration": {},
-            "files": {}
+            "configuration": {
+              "mode": {
+                "useProduction": false
+              },
+              "scope": "api offline_access refresh_token",
+              "clientId": "<% global.consts.random %>",
+              "clientSecret": "<% global.consts.random %>",
+              "refreshErrorLimit": 100000,
+              "refreshInitialBackoff": 100000,
+              "refreshWaitCountLimit": 100000,
+              "refreshBackoffIncrement": 100000,
+              "accessTokenExpirationBuffer": 500
+            },
+            "files": {
+              "package.json": "{\"name\":\"@fusebit-int/catalog-feed-integration-salesforce-object-mapping-connector\",\"version\":\"7.51.19\",\"private\":true,\"scripts\":{\"redeploy\":\"fuse connector rm <% this.id %> && yarn deploy\",\"deploy\":\"fuse connector deploy <% this.id %> -d .\",\"get\":\"fuse connector get <% this.id %> -d .\"},\"dependencies\":{\"@fusebit-int/framework\":\"7.51.19\",\"@fusebit-int/salesforce-connector\":\"7.51.19\"}}"
+            },
+            "handler": "@fusebit-int/salesforce-connector"
+          },
+          "id": "<% this.id %>",
+          "tags": {
+            "fusebit.service": "Salesforce"
           }
         },
         "salesforceIntegration": {
